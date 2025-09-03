@@ -1,0 +1,12 @@
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+em {
+    color: blue;
+    font-style: normal;
+}
