@@ -1,85 +1,111 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header class="header">
-            <h1>HTML ja CSS lühitutvustus</h1>
-            <nav aria-label="Põhinavigatsioon">
-                <a href="#mis_on_html">Mis on HTML?</a>
-                <a href="#html_loomise_programmid">HTML loomise programmid</a>
-            </nav>
-        </header>
-        <main>
-            <section id="mis_on_html" class="card">
-                <h2>Mis on HTML?</h2>
-                <p>HTML on tavaline programmeerimise keel millega saab luua veebilehti. HTML-i kasutatakse, et luua veebilehe vundamendi, andes veebilehtedele struktuuri.</p>
-            </section>
-            <section id="html_loomise_programmid" class="card">
-                <h2>HTML loomise programmid</h2>
-                <p>HTML-i saab luua isegi tavalises tekstiprogrammis kuigi professionaalid kasutavad spetsiifilisi programmeerimis programme, et luua HTML-i.</p>
-                <p>Notepad++</p>
-                <p>Visual Studio Code</p>
-                <p>Subline Text</p>
-                <p>Atom</p>
-                <p>jne</p>
-            </section>
-            <section id="html_element" class="card">
-                <h2>HTML element</h2>
-                <p>HTML element on iga veebilehe alguses ja lõppus, mis näitab, et see fail on html keeles ja sellega laeb vundamendi alguse.</p>
-                <img src="images/html_element.png" alt="HTML element">
-            </section>
-            <section id="header_element" class="card">
-                <h2>Heading element</h2>
-                <p>Heading elementi kasutatakse tiitliteks veebilehtedel. Tavaliselt mida suurem number peale h-i on, seda vähem oluline see on olulisuse hierarhias</p>
-                <img src="images/Heading_element.png" alt="Header element">
-            </section>
-            <section class="card">
-                <h2>Container elemendid</h2>
-                <p>Container elemente kasutatakse, et grupeerida teisi elemente teineteisega. Containeritega saab luua struktuuri sinu HTML failile ja lisada stiili mitmetele elementidele.</p>
-            </section>
-            <section class="card">
-                <h2>Teksti vormindamine</h2>
-                <p>Teksti vormindamise silte kasutatakse teksti loomises ja stiliseerimiseks HTML-is.</p>
-            </section>
-            <section class="card">
-                <h2>Meedia</h2>
-                <p>Meedia on kõik mis on seotud piltide, videote, muusikaga, jne.</p>
-                <h3>Pildid</h3>
-                <h3>Videod</h3>
-                <h3>Muusika</h3>
-            </section>
-            <section class="card">
-                <h2>Lingid</h2>
-                <p>Lingid on elemendid mis saavad sinu ümber suunata teisele veebilehele.</p>
-            </section>
-            <section class="card">
-                <h2>Form</h2>
-                <p>Formi kasutatakse kasutaja sisendi kogumiseks. Tavaliselt kasutaja informatsioon saadetakse serverisse töötlemiseks.</p>
-                <h3>Teksti sisend</h3>
-                <h3>Parooli sisend</h3>
-                <h3>Märkeruut</h3>
-                <h3>Raadio nupp</h3>
-                <h3>Esitamise nupp</h3>
-                <h3>Nupp</h3>
-                <h3>Rippmenüü loend</h3>
-                <h3>Tekstiala</h3>
-                <h3>Faili sisend</h3>
-                <h3>Vahemiku sisend</h3>
-                <h3>Numbri sisend</h3>
-                <h3>E-meili sisend</h3>
-                <h3>Otsingu sisend</h3>
-                <h3>URL sisend</h3>
-                <h3>Kuupäeva sisend</h3>
-            </section>
-            <section class="card">
-                <h2>Semantic element</h2>
-                <h3>Section</h3>
-                <h3>Article</h3>
-                <h3>Aside</h3>
-            </section>
-        </main>
-    </body>
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>HTML ja CSS lühitutvustus</h1>
+      <nav aria-label="Põhinavigatsioon">
+        <a href="#mis_on_html">Mis on HTML?</a>
+        <a href="#html_loomise_programmid">HTML loomise programmid</a>
+      </nav>
+    </header>
+    <main>
+      <section id="mis_on_html" class="card">
+        <h2>Mis on HTML?</h2>
+        <p>
+          HTML on tavaline programmeerimise keel millega saab luua veebilehti.
+          HTML-i kasutatakse, et luua veebilehe vundamendi, andes veebilehtedele
+          struktuuri.
+        </p>
+      </section>
+      <section id="html_loomise_programmid" class="card">
+        <h2>HTML loomise programmid</h2>
+        <p>
+          HTML-i saab luua isegi tavalises tekstiprogrammis kuigi
+          professionaalid kasutavad spetsiifilisi programmeerimis programme, et
+          luua HTML-i.
+        </p>
+        <p>Notepad++</p>
+        <p>Visual Studio Code</p>
+        <p>Subline Text</p>
+        <p>Atom</p>
+        <p>jne</p>
+      </section>
+      <section id="html_element" class="card">
+        <h2>HTML element</h2>
+        <p>
+          HTML element on iga veebilehe alguses ja lõppus, mis näitab, et see
+          fail on html keeles ja sellega laeb vundamendi alguse.
+        </p>
+        <img src="images/html_element.png" alt="HTML element" />
+      </section>
+      <section id="header_element" class="card">
+        <h2>Heading element</h2>
+        <p>
+          Heading elementi kasutatakse tiitliteks veebilehtedel. Tavaliselt mida
+          suurem number peale h-i on, seda vähem oluline see on olulisuse
+          hierarhias
+        </p>
+        <img src="images/Heading_element.png" alt="Header element" />
+      </section>
+      <section class="card">
+        <h2>Container elemendid</h2>
+        <p>
+          Container elemente kasutatakse, et grupeerida teisi elemente
+          teineteisega. Containeritega saab luua struktuuri sinu HTML failile ja
+          lisada stiili mitmetele elementidele.
+        </p>
+      </section>
+      <section class="card">
+        <h2>Teksti vormindamine</h2>
+        <p>
+          Teksti vormindamise silte kasutatakse teksti loomises ja
+          stiliseerimiseks HTML-is.
+        </p>
+      </section>
+      <section class="card">
+        <h2>Meedia</h2>
+        <p>Meedia on kõik mis on seotud piltide, videote, muusikaga, jne.</p>
+        <h3>Pildid</h3>
+        <h3>Videod</h3>
+        <h3>Muusika</h3>
+      </section>
+      <section class="card">
+        <h2>Lingid</h2>
+        <p>
+          Lingid on elemendid mis saavad sinu ümber suunata teisele veebilehele.
+        </p>
+      </section>
+      <section class="card">
+        <h2>Form</h2>
+        <p>
+          Formi kasutatakse kasutaja sisendi kogumiseks. Tavaliselt kasutaja
+          informatsioon saadetakse serverisse töötlemiseks.
+        </p>
+        <h3>Teksti sisend</h3>
+        <h3>Parooli sisend</h3>
+        <h3>Märkeruut</h3>
+        <h3>Raadio nupp</h3>
+        <h3>Esitamise nupp</h3>
+        <h3>Nupp</h3>
+        <h3>Rippmenüü loend</h3>
+        <h3>Tekstiala</h3>
+        <h3>Faili sisend</h3>
+        <h3>Vahemiku sisend</h3>
+        <h3>Numbri sisend</h3>
+        <h3>E-meili sisend</h3>
+        <h3>Otsingu sisend</h3>
+        <h3>URL sisend</h3>
+        <h3>Kuupäeva sisend</h3>
+      </section>
+      <section class="card">
+        <h2>Semantic element</h2>
+        <h3>Section</h3>
+        <h3>Article</h3>
+        <h3>Aside</h3>
+      </section>
+    </main>
+  </body>
 </html>
-
