@@ -9,6 +9,14 @@
       <nav aria-label="Põhinavigatsioon">
         <a href="#mis_on_html">Mis on HTML?</a>
         <a href="#html_loomise_programmid">HTML loomise programmid</a>
+        <a href="#html_element">HTML element</a>
+        <a href="#header_element">Header element</a>
+        <a href="#container_element">Container element</a>
+        <a href="#text_formatting">Text formatting</a>
+        <a href="#media">Meedia</a>
+        <a href="#link_element">Link element</a>
+        <a href="#forming">Form</a>
+        <a href="#semantic_element">Semantic element</a>
       </nav>
     </header>
     <main>
@@ -24,8 +32,7 @@
         <h2>HTML loomise programmid</h2>
         <p>
           HTML-i saab luua isegi tavalises tekstiprogrammis kuigi
-          professionaalid kasutavad spetsiifilisi programmeerimis programme, et
-          luua HTML-i.
+          professionaalid kasutavad spetsiifilisi programmeerimis programme.
         </p>
         <p>Notepad++</p>
         <p>Visual Studio Code</p>
@@ -50,7 +57,7 @@
         </p>
         <img src="images/Heading_element.png" alt="Header element" />
       </section>
-      <section class="card">
+      <section id="container_element" class="card">
         <h2>Container elemendid</h2>
         <p>
           Container elemente kasutatakse, et grupeerida teisi elemente
@@ -58,55 +65,116 @@
           lisada stiili mitmetele elementidele.
         </p>
       </section>
-      <section class="card">
+      <section id="text_formatting" class="card">
         <h2>Teksti vormindamine</h2>
         <p>
           Teksti vormindamise silte kasutatakse teksti loomises ja
           stiliseerimiseks HTML-is.
         </p>
       </section>
-      <section class="card">
+      <section id="media" class="card">
         <h2>Meedia</h2>
-        <p>Meedia on kõik mis on seotud piltide, videote, muusikaga, jne.</p>
+        <p>Meedia on kõik mis on seotud piltide, videote ja heliga.</p>
         <h3>Pildid</h3>
+        <img src="images/Image_element.png" alt="Image element" />
         <h3>Videod</h3>
-        <h3>Muusika</h3>
+        <img src="images/Video_element.png" alt="Video element" />
+        <video width="320" height="240" controls>
+          <source
+            src="https://www.w3schools.com/html/mov_bbb.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <h3>Heli</h3>
+        <img src="images/Audio_element.png" alt="Audio element" />
+        <audio controls>
+          <source src="horse.mp3" type="audio/mpeg" />
+        </audio>
       </section>
-      <section class="card">
+      <section id="link_element" class="card">
         <h2>Lingid</h2>
         <p>
           Lingid on elemendid mis saavad sinu ümber suunata teisele veebilehele.
         </p>
+        <img src="images/link_element.png" alt="Link element" />
       </section>
-      <section class="card">
+      <section id="forming" class="card">
         <h2>Form</h2>
         <p>
           Formi kasutatakse kasutaja sisendi kogumiseks. Tavaliselt kasutaja
           informatsioon saadetakse serverisse töötlemiseks.
         </p>
         <h3>Teksti sisend</h3>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="20"
+        />
         <h3>Parooli sisend</h3>
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          required
+        />
         <h3>Märkeruut</h3>
+        <input type="checkbox" id="checkexample" name="checkexample" />
         <h3>Raadio nupp</h3>
+        <input
+          type="radio"
+          id="radioexample"
+          name="radioexample"
+          value="huey"
+        />
         <h3>Esitamise nupp</h3>
+        <input type="submit" value="Esita" />
         <h3>Nupp</h3>
+        <input type="button" value="Nupp" />
         <h3>Rippmenüü loend</h3>
-        <h3>Tekstiala</h3>
+        <select>
+          <option value="option1">1. variant</option>
+          <option value="option2">2. variant</option>
+          <option value="option3">3. variant</option>
+        </select>
         <h3>Faili sisend</h3>
+        <input
+          type="file"
+          id="fileexample"
+          name="FileExample"
+          accept="image/png, image/jpeg"
+        />
         <h3>Vahemiku sisend</h3>
+        <input type="range" min="-10" max="10" />
         <h3>Numbri sisend</h3>
+        <input id="number" type="number" value="0" />
         <h3>E-meili sisend</h3>
+        <input id="emailAddress" type="email" />
         <h3>Otsingu sisend</h3>
+        <form>
+          <div>
+            <input type="search" id="mySearch" name="q" />
+            <button>Search</button>
+          </div>
+        </form>
         <h3>URL sisend</h3>
+        <input id="URLexample" name="URLexample" type="url" />
         <h3>Kuupäeva sisend</h3>
+        <input type="date" value="" />
       </section>
-      <section class="card">
+      <section id="semantic_element" class="card">
         <h2>Semantic element</h2>
         <h3>Section</h3>
+        <img src="images/Section_element.png" alt="Section element" />
         <h3>Article</h3>
+        <img src="images/Article_element.png" alt="Article element" />
         <h3>Aside</h3>
+        <img src="images/Aside_element.png" alt="Aside element" />
       </section>
     </main>
   </body>
 </html>
-
