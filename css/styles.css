@@ -3,33 +3,80 @@
   border-style: solid;
   border-color: black;
   border-width: 3px;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
-  max-width: 100%;
+  width: 77.5rem;
+}
+@media (max-width: 1024px) {
+  .header {
+    width: 61.5rem;
+  }
+}
+@media (max-width: 810px) {
+  .header {
+    width: 48.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    width: 35.5rem;
+  }
+}
+@media (max-width: 412px) {
+  .header {
+    width: 23.5rem;
+  }
 }
 @media (max-width: 360px) {
   .header {
-    width: 20.5rem;
+    width: 95%;
   }
 }
 body {
   background-color: rgb(0, 27, 0);
   display: grid;
   justify-items: center;
+  justify-content: center;
+  align-items: center;
   grid-gap: 20px;
 }
 main {
   display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
   grid-gap: 20px;
 }
 
 img {
-  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  width: 60rem;
+}
+@media (max-width: 1024px) {
+  img {
+    width: 59rem;
+  }
+}
+@media (max-width: 810px) {
+  img {
+    width: 46rem;
+  }
+}
+@media (max-width: 600px) {
+  img {
+    width: 34rem;
+  }
+}
+@media (max-width: 412px) {
+  img {
+    width: 22rem;
+  }
 }
 @media (max-width: 360px) {
   img {
-    width: 18rem;
+    max-width: 100%;
   }
 }
 .card {
@@ -41,8 +88,28 @@ img {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  width: 100%;
+  width: 75rem;
   padding: 20px;
+}
+@media (max-width: 1024px) {
+  .card {
+    width: 59rem;
+  }
+}
+@media (max-width: 810px) {
+  .card {
+    width: 46rem;
+  }
+}
+@media (max-width: 600px) {
+  .card {
+    width: 33rem;
+  }
+}
+@media (max-width: 412px) {
+  .card {
+    width: 21rem;
+  }
 }
 @media (max-width: 360px) {
   .card {

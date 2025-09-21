@@ -1,25 +1,30 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML spikerdusleht</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <header class="header">
-      <h1>HTML ja CSS lühitutvustus</h1>
-      <nav aria-label="Põhinavigatsioon">
-        <a href="#mis_on_html">Mis on HTML?</a>
-        <a href="#html_loomise_programmid">HTML loomise programmid</a>
-        <a href="#html_element">HTML element</a>
-        <a href="#header_element">Header element</a>
-        <a href="#container_element">Container element</a>
-        <a href="#text_formatting">Text formatting</a>
-        <a href="#media">Meedia</a>
-        <a href="#link_element">Link element</a>
-        <a href="#forming">Form</a>
-        <a href="#semantic_element">Semantic element</a>
-      </nav>
+      <h1>HTML spikerdusleht</h1>
     </header>
     <main>
+      <section class="card">
+        <nav aria-label="Põhinavigatsioon">
+          <a href="#mis_on_html">Mis on HTML?</a>
+          <a href="#html_loomise_programmid">HTML loomise programmid</a>
+          <a href="#html_element">HTML element</a>
+          <a href="#header_element">Header element</a>
+          <a href="#container_element">Container element</a>
+          <a href="#text_formatting">Text formatting</a>
+          <a href="#media">Meedia</a>
+          <a href="#link_element">Link element</a>
+          <a href="#forming">Form</a>
+          <a href="#semantic_element">Semantic element</a>
+        </nav>
+      </section>
       <section id="mis_on_html" class="card">
         <h2>Mis on HTML?</h2>
         <p>
@@ -105,6 +110,7 @@
           informatsioon saadetakse serverisse töötlemiseks.
         </p>
         <h3>Teksti sisend</h3>
+        <img src="images/Text_input.png" alt="Text input" />
         <input
           type="text"
           id="name"
@@ -115,6 +121,7 @@
           size="20"
         />
         <h3>Parooli sisend</h3>
+        <img src="images/Password_input.png" alt="Password input" />
         <input
           type="password"
           id="pass"
@@ -123,8 +130,10 @@
           required
         />
         <h3>Märkeruut</h3>
+        <img src="images/Checkmark_input.png" alt="Checkmark input" />
         <input type="checkbox" id="checkexample" name="checkexample" />
         <h3>Raadio nupp</h3>
+        <img src="images/Radio_input.png" alt="Radio input" />
         <input
           type="radio"
           id="radioexample"
@@ -132,16 +141,20 @@
           value="huey"
         />
         <h3>Esitamise nupp</h3>
+        <img src="images/Submit_input.png" alt="Submit input" />
         <input type="submit" value="Esita" />
         <h3>Nupp</h3>
+        <img src="images/Button_input.png" alt="Button input" />
         <input type="button" value="Nupp" />
         <h3>Rippmenüü loend</h3>
+        <img src="images/Select_input.png" alt="Select input" />
         <select>
           <option value="option1">1. variant</option>
           <option value="option2">2. variant</option>
           <option value="option3">3. variant</option>
         </select>
         <h3>Faili sisend</h3>
+        <img src="images/File_input.png" alt="File input" />
         <input
           type="file"
           id="fileexample"
@@ -149,12 +162,16 @@
           accept="image/png, image/jpeg"
         />
         <h3>Vahemiku sisend</h3>
+        <img src="images/Range_input.png" alt="Range input" />
         <input type="range" min="-10" max="10" />
         <h3>Numbri sisend</h3>
+        <img src="images/Number_input.png" alt="Number input" />
         <input id="number" type="number" value="0" />
         <h3>E-meili sisend</h3>
+        <img src="images/Email_input.png" alt="Email input" />
         <input id="emailAddress" type="email" />
         <h3>Otsingu sisend</h3>
+        <img src="images/Search_input.png" alt="Search input" />
         <form>
           <div>
             <input type="search" id="mySearch" name="q" />
@@ -162,19 +179,35 @@
           </div>
         </form>
         <h3>URL sisend</h3>
+        <img src="images/URL_input.png" alt="URL input" />
         <input id="URLexample" name="URLexample" type="url" />
         <h3>Kuupäeva sisend</h3>
+        <img src="images/Date_input.png" alt="Date input" />
         <input type="date" value="" />
       </section>
       <section id="semantic_element" class="card">
         <h2>Semantic element</h2>
         <h3>Section</h3>
+        <p>
+          Section elementi kasutatakse veebilehe sisu organiseerimiseks
+          sektsioonideks.
+        </p>
         <img src="images/Section_element.png" alt="Section element" />
         <h3>Article</h3>
+        <p>
+          Article elementi kasutatkse veebilehe sektsioonide sisu
+          organiseerimiseks, eriti kui on tegemist viki või uudistelehega.
+        </p>
         <img src="images/Article_element.png" alt="Article element" />
         <h3>Aside</h3>
+        <p>
+          Aside elementi kasutatakse spetsiifiliste tekstide esiletõstmiseks.
+        </p>
         <img src="images/Aside_element.png" alt="Aside element" />
       </section>
     </main>
   </body>
 </html>
+
+<input type="date" value="" />
+
